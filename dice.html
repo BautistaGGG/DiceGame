@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dice.css">
+    <title>DiceGame 2.0</title>
+</head>
+<body>
+    <h1 id = "welcomeMessage">Bienvenidos al DiceGame</h1>
+    <h3 id="rules">En caso de salir 1 - 2 - 3, comienza el jugador 1
+        En caso de salir 4 - 5 - 6, comienza el jugador 2
+        ¡Quien llegue primero a 20, es el ganador!</h3>
+    <div class="container">
+        <h1 id="message">¿Quién tira primero?</h1>
+
+        <button id = "deciderBtn">Clickea para saberlo</button>
+        <h3 id ="inicioPartida"></h3>
+
+        <div class="players">
+            <div id="player1">
+                <h1>Puntaje: 
+                    <span id="player1Scoreboard">0</span>
+                </h1>
+                <div id="player1Dice" class="dice active">-</div>
+            </div>
+            <div id="player2">
+                <h1>Puntaje: 
+                    <span id="player2Scoreboard">0</span>
+                </h1>
+                <div id="player2Dice" class="dice">-</div>
+            </div>
+        </div>
+        <button id="rollBtn">Tirar dados 🎲</button>
+        <button id="resetBtn">Reiniciar juego 🔁</button>
+    </div>
+    <p>Para el finde: Crear un input y modificar el nombre "Jugador1" y "Jugador2" en base a los valores ingresados en el input</p>
+    <footer>Coded by Bautista González Gastó</footer>
+    <script src="dice.js"></script>
+</body>
+</html>
