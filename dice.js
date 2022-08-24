@@ -17,19 +17,24 @@ deciderBtn.addEventListener("click",function(){
     const randomNumber = Math.floor(Math.random()*6) + 1
     deciderBtn.textContent = randomNumber
     if (deciderBtn.textContent == 1  || deciderBtn.textContent == 2 || deciderBtn.textContent == 3){   
-        inicioPartida.textContent = "El jugador 1 comienza la partida"
-        points1.classList.add("active")
-        points2.classList.remove("active")
-        deciderBtn.disabled = true
-        player1Turn = true
+        setTimeout(() => {
+            inicioPartida.textContent = "El jugador 1 comienza la partida"
+            points1.classList.add("active")
+            points2.classList.remove("active")
+            deciderBtn.disabled = true
+            player1Turn = true
+       }, 1200); 
     } else {
         deciderBtn.textContent = randomNumber
+        setTimeout(() => {
         deciderBtn.textContent == 4 || deciderBtn.textContent == 5 || deciderBtn.textContent == 6 
         inicioPartida.textContent = "El jugador 2 comienza la partida"
         points1.classList.remove("active")
         points2.classList.add("active")
         deciderBtn.disabled = true
         player1Turn = false
+        },1200)
+
     } 
 })
 
